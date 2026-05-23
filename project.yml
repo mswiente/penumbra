@@ -1,0 +1,21 @@
+name: Penumbra
+options:
+  bundleIdPrefix: com.mswientek
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15"
+
+targets:
+  Penumbra:
+    type: application
+    platform: macOS
+    sources:
+      - path: Penumbra
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mswientek.Penumbra
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_APP_SANDBOX: NO
+        INFOPLIST_FILE: Penumbra/Info.plist
